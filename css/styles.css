@@ -12,6 +12,21 @@ body {
   color: var(--main-text-color);
   background-color: var(--sub-backgrounds3);
 }
+.icons-svg {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.employees-links-svg {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 10px;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -89,7 +104,10 @@ ul li {
   flex-direction: column;
 }
 .bsolutions-background {
-  background-color: var(--sub-bakcgrounds);
+  background-image: url(/images/main-background.jpg),
+    url(/images/Img\ Overlay.png);
+  background-size: cover;
+
   margin: 0;
   box-sizing: content-box;
   height: 600px;
@@ -122,9 +140,9 @@ ul li {
   font-size: 14px;
   line-height: 1.71;
   color: var(--subtext-color);
-
+  padding: 0;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 .descriptions h4 {
   color: var(--main-text-color);
@@ -133,6 +151,7 @@ ul li {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .wrapper h2 {
