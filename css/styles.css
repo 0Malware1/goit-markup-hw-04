@@ -152,6 +152,7 @@ ul li {
   flex-flow: row;
   justify-content: space-between;
   gap: 30px;
+  padding: 15px;
 }
 
 .wrapper h2 {
