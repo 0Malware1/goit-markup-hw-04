@@ -6,11 +6,48 @@
   --sub-bakcgrounds: #2f303a;
   --sub-backgrounds2: #f5f4fa;
   --sub-backgrounds3: #ffffff;
+  --svg-colors: #afb1b8;
 }
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--main-text-color);
   background-color: var(--sub-backgrounds3);
+}
+.mail1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  fill: var(--svg-colors);
+  color: #757575;
+  text-decoration: none;
+}
+.mail1 svg {
+  width: 16px;
+  height: 12px;
+  fill: var(--svg-colors);
+}
+
+.mail1:hover {
+  color: var(--brand-color);
+  fill: var(--brand-color); /* z jakiegoś powodu to nie działa (fill) */
+}
+.tel1 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  color: #757575;
+  text-decoration: none;
+}
+.tel1 svg {
+  width: 10px;
+  height: 16px;
+  fill: var(--svg-colors);
+}
+.tel1:hover {
+  color: var(--brand-color);
+  fill: var(--brand-color); /* tak samo jak wyżej */
 }
 .icons-svg {
   display: flex;
@@ -18,7 +55,26 @@ body {
   align-items: center;
   padding-bottom: 42px;
 }
-.mainx {
+.click-svg:hover {
+  fill: #ffffff;
+  cursor: pointer;
+}
+.clickable {
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--svg-colors);
+}
+.clickable:hover {
+  background: var(--brand-color);
+  border-radius: 100%;
+}
+.main-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--sub-backgrounds2);
   width: 270px;
   height: 120px;
@@ -26,12 +82,64 @@ body {
 }
 .employees-links-svg {
   display: flex;
-  flex-direction: row;
+
   justify-content: space-around;
-  gap: 30px;
+  align-items: center;
+  gap: 10px;
   padding: 0;
 }
+.list-of-clients {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 94px;
+  padding: 0;
+}
+.clients-svg {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--svg-colors);
+  border-radius: 4px;
+  fill: var(--svg-colors);
+}
+.clients h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  margin-top: 94px;
+}
+.highlighter:hover {
+  border-color: var(--brand-color);
+  cursor: pointer;
+  fill: var(--brand-color);
+}
 
+.join-us-icons {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.clickable2 {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--sub-backgrounds3);
+}
+.clickable2:hover {
+  background-color: var(--brand-color);
+  cursor: pointer;
+  border-radius: 100%;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -79,8 +187,10 @@ ul li {
   margin-right: 371px;
 }
 
-.tel1 {
-  margin-left: 50px;
+.mailandtel {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 .logo {
   font-family: "Raleway";
@@ -91,6 +201,9 @@ ul li {
 .blue {
   color: var(--brand-color);
 }
+.mail1:hover {
+  color: var(--brand-color);
+}
 .links {
   text-decoration: none;
   color: var(--main-text-color);
@@ -98,6 +211,7 @@ ul li {
 .links:hover {
   color: var(--brand-color);
 }
+
 .tel-number {
   color: var(--subtext-color);
   text-decoration: none;
@@ -109,8 +223,8 @@ ul li {
   flex-direction: column;
 }
 .bsolutions-background {
-  background-image: url(/images/main-background.jpg),
-    url(/images/Img\ Overlay.png);
+  background-image: url(../images/main-background.jpg),
+    url(../images/ImgOverlay.png);
   background-size: cover;
 
   margin: 0;
@@ -214,14 +328,20 @@ ul li {
   font-weight: 500;
   text-align: center;
 }
-
-.footers {
-  margin: 0;
+.footer-rows {
   background-color: var(--sub-bakcgrounds);
 }
-.footer-c {
+.join-us h4 {
+  margin: 0;
+  color: var(--sub-backgrounds3);
+}
+.pack {
+  display: flex;
+  justify-content: flex-start;
+  gap: 70px;
   padding-top: 60px;
 }
+
 .logo2 {
   color: var(--sub-backgrounds3);
   font-weight: 700;
