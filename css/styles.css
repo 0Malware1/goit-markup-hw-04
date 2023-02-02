@@ -28,9 +28,9 @@ body {
   fill: var(--svg-colors);
 }
 
-.mail1:hover {
+.highlighter2:hover {
   color: var(--brand-color);
-  fill: var(--brand-color); /* z jakiegoś powodu to nie działa (fill) */
+  fill: var(--brand-color);
 }
 .tel1 {
   display: flex;
@@ -45,10 +45,7 @@ body {
   height: 16px;
   fill: var(--svg-colors);
 }
-.tel1:hover {
-  color: var(--brand-color);
-  fill: var(--brand-color); /* tak samo jak wyżej */
-}
+
 .icons-svg {
   display: flex;
   justify-content: center;
@@ -177,6 +174,32 @@ ul li {
   justify-content: space-between;
   gap: 40px;
   padding: 0px;
+  margin: 0;
+}
+.main-navigation li {
+  position: relative;
+}
+/* nie chce działać active */
+.main-navigation li:hover::after {
+  content: "";
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  top: 45px;
+  width: 53px;
+  height: 4px;
+  background-color: var(--brand-color);
+}
+.main-navigation li:active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-radius: 2px;
+  left: 0;
+  top: 45px;
+  width: 53px;
+  height: 4px;
+  background-color: var(--brand-color);
 }
 .navigation {
   display: flex;
@@ -201,9 +224,7 @@ ul li {
 .blue {
   color: var(--brand-color);
 }
-.mail1:hover {
-  color: var(--brand-color);
-}
+
 .links {
   text-decoration: none;
   color: var(--main-text-color);
@@ -286,6 +307,57 @@ ul li {
   padding: 0;
   justify-content: space-between;
   margin-top: 50px;
+}
+.wrapper-gallery li {
+  position: relative;
+}
+.wrapper-gallery li:nth-child(1)::after {
+  content: "APLIKACJE KOMPUTEROWE";
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  left: 0px;
+  color: var(--sub-backgrounds3);
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 16.41px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-gallery li:nth-child(2)::after {
+  content: "APLIKACJE MOBILNE";
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  left: 0px;
+  color: var(--sub-backgrounds3);
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 16.41px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper-gallery li:nth-child(3)::after {
+  content: "ROZWIĄZANIA GRAFICZNE";
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  top: 224px;
+  left: 0px;
+  color: var(--sub-backgrounds3);
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  line-height: 16.41px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .subtext {
   font-weight: 400;
